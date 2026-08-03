@@ -2,7 +2,7 @@
 # 🚀 Modern Flask Portfolio & Starter Kit
 
 Bu proje; geliştiriciler, ajanslar ve freelancerlar için özel olarak tasarlanmış, **Python Flask** ve **Tailwind CSS** tabanlı 5 sayfalık modern bir web şablonudur.
-Projeyi bilgisayarınıza indirdikten sonra, terminalde açarak "requirements.txt" yazmanız kurulum için yeterlidir, çalıştırmak için ise "python3 app.py" yazınız.
+Projeyi bilgisayarınıza indirdikten sonra, terminalde açarak "pip install -r requirements.txt" yazmanız kurulum için yeterlidir, çalıştırmak için ise "python3 app.py" yazınız.
 
 ## 🛠️ Kullanılan Teknolojiler
 * **Backend:** Python (Flask 3.0)
