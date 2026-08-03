@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Flask Hazır Şablon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
+
+    <!-- Navigasyon -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="{{ url_for('home') }}" class="text-2xl font-bold text-indigo-600">PyLaunch</a>
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="{{ url_for('home') }}" class="hover:text-indigo-600 transition">Anasayfa</a>
+                <a href="{{ url_for('about') }}" class="hover:text-indigo-600 transition">Hakkımızda</a>
+                <a href="{{ url_for('services') }}" class="hover:text-indigo-600 transition">Hizmetler</a>
+                <a href="{{ url_for('portfolio') }}" class="hover:text-indigo-600 transition">Portfolyo</a>
+                <a href="{{ url_for('contact') }}" class="hover:text-indigo-600 transition">İletişim</a>
+            </nav>
+            <a href="{{ url_for('contact') }}" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">Hemen Başla</a>
+        </div>
+    </header>
+
+    <!-- Dinamik İçerik Alanı -->
+    <main class="flex-grow">
+        {% block content %}{% endblock %}
+    </main>
+
+<!-- Harici Özel CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<!-- Harici JavaScript -->
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 mt-20">
+        <div class="max-w-7xl mx-auto px-4 py-8 text-center text-slate-500 text-sm">
+            &copy; 2026 PyLaunch. Tüm hakları saklıdır. 
+           </div>
+        <div class="max-w-7xl mx-auto px-4 py-8 text-center text-slate-500 text-sm">
+                   made by silatasdemir
+        </div>
+    </footer>
+
+</body>
+</html>
