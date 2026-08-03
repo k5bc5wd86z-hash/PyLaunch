@@ -1,2 +1,27 @@
 # PyLaunch
-"Modern 5-page Flask starter kit &amp; portfolio template built with Python, Tailwind CSS, and clean modular architecture."
+# 🚀 Modern Flask Portfolio & Starter Kit
+
+Bu proje; geliştiriciler, ajanslar ve freelancerlar için özel olarak tasarlanmış, **Python Flask** ve **Tailwind CSS** tabanlı 5 sayfalık modern bir web şablonudur.
+
+## 🛠️ Kullanılan Teknolojiler
+* **Backend:** Python (Flask 3.0)
+* **Frontend:** Tailwind CSS (CDN) + Özel CSS
+* **İnteraktif Özellikler:** Vanilla JavaScript (Mobil menü & animasyonlar)
+* **Şablon Motoru:** Jinja2
+
+## 📁 Proje Mimarisi
+```text
+yeni_proje/
+│
+├── app.py                  # Ana Flask uygulama rotaları
+├── requirements.txt        # Bağımlılıklar
+├── static/
+│   ├── css/style.css       # Özel stiller ve animasyonlar
+│   └── js/main.js         # JavaScript işlevleri
+└── templates/
+    ├── base.html           # Ortak şablon (Navbar & Footer)
+    ├── index.html          # Anasayfa (Terminal mockup)
+    ├── about.html          # Hakkımda
+    ├── services.html       # Hizmetler
+    ├── projects.html       # Portfolyo (Psikoloji Havuzu Referansı)
+    └── contact.html        # İletişim Formu & Flash Mesajlar
